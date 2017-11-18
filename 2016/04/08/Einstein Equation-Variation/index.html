@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Derivation of Einstein&#39;s Fields Equation | 逸世凌虚的试剑亭 | 云行雨施，品物流形</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Newtonian Limits,Variational Methods">
+    <meta name="description" content="We are going to cover two ways of the derivation of Einstein’s equation, one is based on physical analysis, anther one utilizing the variational approaches.  En">
+<meta name="keywords" content="Newtonian Limits,Variational Methods">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Derivation of Einstein&#39;s Fields Equation">
+<meta property="og:url" content="http://yoursite.com/2016/04/08/Einstein Equation-Variation/index.html">
+<meta property="og:site_name" content="逸世凌虚的试剑亭">
+<meta property="og:description" content="We are going to cover two ways of the derivation of Einstein’s equation, one is based on physical analysis, anther one utilizing the variational approaches.  Energy-Momentum Tensor Def(Energy-Momentum">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-11-18T08:56:23.357Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Derivation of Einstein&#39;s Fields Equation">
+<meta name="twitter:description" content="We are going to cover two ways of the derivation of Einstein’s equation, one is based on physical analysis, anther one utilizing the variational approaches.  Energy-Momentum Tensor Def(Energy-Momentum">
+    
+        <link rel="alternate" type="application/atom+xml" title="逸世凌虚的试剑亭" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Xiaodong Hu</h5>
+          <a href="mailto:cdqz2014@mail.ustc.edu.cn" title="cdqz2014@mail.ustc.edu.cn" class="mail">cdqz2014@mail.ustc.edu.cn</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/cdqz2014" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.zhihu.com/people/gai-nie-39/answers" target="_blank" >
+                <i class="icon icon-lg icon-link"></i>
+                zhihu
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Derivation of Einstein&#39;s Fields Equation</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Derivation of Einstein&#39;s Fields Equation</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2016-04-08T10:28:05.000Z" itemprop="datePublished" class="page-time">
+  2016-04-08
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/General-Relativity/">General Relativity</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Energy-Momentum-Tensor"><span class="post-toc-number">1.</span> <span class="post-toc-text">Energy-Momentum Tensor</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Def-Energy-Momentum-Tensor"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Def(Energy-Momentum Tensor):</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Example"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Example:</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Claim-Energy-Momentum-Tensor-of-Electrodynamics"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Claim(Energy-Momentum Tensor of Electrodynamics):</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Proof"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Proof:</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Derivation-Based-on-Functional-Derivatives"><span class="post-toc-number">2.</span> <span class="post-toc-text">Derivation Based on Functional Derivatives</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Axiom-Hilbert-Action"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Axiom:(Hilbert Action)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Proposition-Einstein’s-Field-Equation"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Proposition(Einstein’s Field Equation):</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Proof-1"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">Proof:</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Einstein Equation-Variation"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Derivation of Einstein's Fields Equation</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2016-04-08 18:28:05" datetime="2016-04-08T10:28:05.000Z"  itemprop="datePublished">2016-04-08</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/General-Relativity/">General Relativity</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>We are going to cover two ways of the derivation of Einstein’s equation, one is based on physical analysis, anther one utilizing the variational approaches.</p>
+<hr>
+<h1 id="Energy-Momentum-Tensor"><a href="#Energy-Momentum-Tensor" class="headerlink" title="Energy-Momentum Tensor"></a>Energy-Momentum Tensor</h1><hr>
+<h2 id="Def-Energy-Momentum-Tensor"><a href="#Def-Energy-Momentum-Tensor" class="headerlink" title="Def(Energy-Momentum Tensor):"></a>Def(Energy-Momentum Tensor):</h2><p>Given the action $I$, the energy momentum tensor of a physical system is defined as</p>
+<p>$$T_{\mu\nu}:=-\dfrac{2}{\sqrt{-g}}\dfrac{\delta I}{\delta g^{\mu\nu}},$$</p>
+<p>where $\displaystyle\dfrac{\delta I}{\delta g^{\mu\nu}}$ is variational derivatives and $g$ represents the determinant of matrix $(g_{\mu\nu})$.</p>
+<hr>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h2><p>In electrodynamics, the action is (there may be some typos about the coefficients, but that does not matter at all)<br>$$<br>\begin{equation}\label{1.1.1}I_{em}=-\dfrac{1}{4}\int d^{4}x\sqrt{-g}F^{\mu\nu}F_{\mu\nu}.\end{equation}<br>$$</p>
+<p>If we introduce $\text{magnetic vector protential }A_{\mu}$ (It is a valuable to check that this definition automatically satisfies the 4-dimensional Maxell’s equation $\partial_{[\alpha}F_{\mu\nu]}=0$. Additionally, you can re-express the Maxell’s equation in a more symmetric form by $\text{Hodge star }*:\Lambda^{k}(V)\rightarrow\Lambda^{n-k}(V)$ in differential manifolds. Here I just skip it because it thouroughly digresses from the topic :) )</p>
+<p>$$F_{\mu\nu}\equiv\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}.$$</p>
+<p>Then one can show that the energy momentum defined here is compatible with that we already knew in electrodynamics classes:</p>
+<hr>
+<h2 id="Claim-Energy-Momentum-Tensor-of-Electrodynamics"><a href="#Claim-Energy-Momentum-Tensor-of-Electrodynamics" class="headerlink" title="Claim(Energy-Momentum Tensor of Electrodynamics):"></a>Claim(Energy-Momentum Tensor of Electrodynamics):</h2><p>$$<br>\begin{equation}\label{1.1.2}T_{\rho\sigma}^{em}=-\dfrac{2}{\sqrt{-g}}\dfrac{\delta I_{em}}{\delta g^{\rho\sigma}}=-\dfrac{1}{4}g_{\rho\sigma}F^{2}+F_{\rho\nu}F_{\sigma}^{~\nu}.\end{equation}<br>$$</p>
+<hr>
+<h2 id="Proof"><a href="#Proof" class="headerlink" title="Proof:"></a>Proof:</h2><p>(skipped)</p>
+<hr>
+<h1 id="Derivation-Based-on-Functional-Derivatives"><a href="#Derivation-Based-on-Functional-Derivatives" class="headerlink" title="Derivation Based on Functional Derivatives"></a>Derivation Based on Functional Derivatives</h1><hr>
+<p>Undoubtedly it is based on talent analyses on physics that Einstein firstly write down the Field Equation. The reason why I give you another approach at first is because of some pedagogical consideration.</p>
+<hr>
+<h2 id="Axiom-Hilbert-Action"><a href="#Axiom-Hilbert-Action" class="headerlink" title="Axiom:(Hilbert Action)"></a>Axiom:(Hilbert Action)</h2><p>The action of general relativity is given by Hilbert that</p>
+<p>$$I_{G}=\dfrac{1}{16\pi G}\int dx^{4}\sqrt{-g}R,$$</p>
+<p>where $R$ is Ricci scalar.</p>
+<hr>
+<h2 id="Proposition-Einstein’s-Field-Equation"><a href="#Proposition-Einstein’s-Field-Equation" class="headerlink" title="Proposition(Einstein’s Field Equation):"></a>Proposition(Einstein’s Field Equation):</h2><p>$$<br>\begin{equation}\label{1.2.1}R_{\mu\nu}-\dfrac{1}{2}g_{\mu\nu}R=8\pi GT_{\mu\nu}\end{equation}<br>$$</p>
+<hr>
+<h2 id="Proof-1"><a href="#Proof-1" class="headerlink" title="Proof:"></a>Proof:</h2><p>$$\delta I_{G}=\dfrac{1}{16\pi G}\int dx^{4}\bigg[(\delta\sqrt{-g})g^{\mu\nu}R_{\mu\nu}+\sqrt{-g}(\delta g^{\mu\nu})R_{\mu\nu}+\sqrt{-g}g^{\mu\nu}\delta R_{\mu\nu}\bigg].$$</p>
+<p>There is no harm to consider the derivation in the local inertial coordinate(<strong>think why?</strong>), that is, $g_{\mu\nu}\rightarrow\eta_{\mu\nu}$ and $\varGamma_{\mu\nu}^{\sigma}=0$. Thus,<br>$$\delta R_{\mu k}=\partial_{k}\delta\varGamma_{\mu\lambda}^{\lambda}-\partial_{\lambda}\delta\varGamma_{\mu k}^{\lambda}+0+0-0-0.$$</p>
+<p>And it is easy to check that $\delta\varGamma$ is always a tensor<span style="color: #000000;">.</span><strong><span style="color: #000000;">(verify!) <span style="color: #333333;">(</span></span><span style="color: #333333;">Hint:</span> Consider two distinct connections defined on the manifold and their affine connection’s behaviors under the coordinate tansformation.)</strong></p>
+<p>In this way,<br>$$<br>\begin{align}\sqrt{-g}g^{\mu\nu}R_{\mu\nu}&amp;=\sqrt{-g}g^{\mu\nu}(\partial_{\nu}\delta\varGamma_{\mu\lambda}^{\lambda})-\sqrt{-g}g^{\mu\nu}(\partial_{\lambda}\delta\varGamma_{\mu\nu}^{\lambda})\nonumber\\=&amp;\partial_{\nu}(\sqrt{-g}g^{\mu\nu}\delta\varGamma_{\mu\lambda}^{\lambda})-\partial_{\lambda}(\sqrt{-g}g^{\mu\nu}\delta\varGamma_{\mu\nu}^{\lambda}),\end{align}<br>$$<br>which vanishes at the boundary of spacetime by integrating by parts.</p>
+<p>So<br>$$<br>\begin{align}\delta I_{G}&amp;=\dfrac{1}{16\pi G}\int dx^{4}\bigg[(\delta\sqrt{-g})g^{\mu\nu}R_{\mu\nu}+\sqrt{-g}(\delta g^{\mu\nu})R_{\mu\nu}\bigg]\nonumber\\&amp;=\dfrac{1}{16\pi G}\int dx^{4}\left[\dfrac{\sqrt{-g}}{2}g^{\rho\sigma}g^{\mu\nu}R_{\mu\nu}\delta g_{\rho\sigma}+\sqrt{-g}(-g^{\mu\rho}g^{\nu\sigma}\delta g_{\rho\sigma})R_{\mu\nu}\right]\nonumber\\&amp;=\dfrac{1}{16\pi G}\int dx^{4}\sqrt{-g}\delta g_{\rho\sigma}\left(\dfrac{1}{2}g^{\rho\sigma}R-R^{\rho\sigma}\right),\nonumber\end{align}<br>$$<br>or (<strong>there are some nontivial indice contraction tricks in the above computation that I believe you can handle, so I just left them as exercises.</strong>)</p>
+<p>$$\displaystyle\dfrac{\delta I_{G}}{\delta g^{\rho\sigma}}=\dfrac{\sqrt{-g}}{16\pi G}\left(-\dfrac{1}{2}g^{\rho\sigma}R-R^{\rho\sigma}\right).$$</p>
+<p>On the other aspect, $\displaystyle\dfrac{\delta I_{G}}{\delta g^{\rho\sigma}}=-\dfrac{\sqrt{-g}}{2}T^{\rho\sigma}$.</p>
+<p>At last, by reducing the indices we get $\text{Einstein’s Field Equation}$:</p>
+<p>$$<br>\begin{equation}<br>R_{\mu\nu}-\dfrac{1}{2}g_{\mu\nu}R=8\pi GT_{\mu\nu}.<br>\end{equation}<br>$$</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2017-11-18T08:56:23.357Z" itemprop="dateUpdated">2017-11-18 16:56:23</time>
+</span><br>
+
+
+        
+        Page configurations see <a href="https://github"></a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="Xiaodong Hu">
+            Xiaodong Hu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Newtonian-Limits/">Newtonian Limits</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Variational-Methods/">Variational Methods</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2016/04/08/Einstein Equation-Variation/&title=《Derivation of Einstein's Fields Equation》 — 逸世凌虚的试剑亭&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2016/04/08/Einstein Equation-Variation/&title=《Derivation of Einstein's Fields Equation》 — 逸世凌虚的试剑亭&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/04/08/Einstein Equation-Variation/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Derivation of Einstein's Fields Equation》 — 逸世凌虚的试剑亭&url=http://yoursite.com/2016/04/08/Einstein Equation-Variation/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2016/04/08/Einstein Equation-Variation/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/11/18/hello-world/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Hello World</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2016/02/28/Noether-Theorem-for-Non-autonomous-System/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Noether Theorem for Non-autonomous System</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'cdqz2014',
+            repo: 'cdqz2014.github.io',
+            oauth: {
+                client_id: '9feb99ec3ea4a29a12da',
+                client_secret: '33ddcb80b221846de3e9e1f39f9b7736fb245834',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢支持~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Xiaodong Hu &copy; 2015 - 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2016/04/08/Einstein Equation-Variation/&title=《Derivation of Einstein's Fields Equation》 — 逸世凌虚的试剑亭&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2016/04/08/Einstein Equation-Variation/&title=《Derivation of Einstein's Fields Equation》 — 逸世凌虚的试剑亭&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/04/08/Einstein Equation-Variation/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Derivation of Einstein's Fields Equation》 — 逸世凌虚的试剑亭&url=http://yoursite.com/2016/04/08/Einstein Equation-Variation/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2016/04/08/Einstein Equation-Variation/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLUlEQVR42u3aQW7DMAwEwPz/0+m1RRFjl0qLWBqdgrixNT6wFMnHI17Pbyu5+uqb35/zp7xhYWBg3JbxvFzJRme/ut5D/hQMDIxzGK8i2Ku/Wd/cemjGwMDAaG+XbzdhY2BgYKwwklCb3L99ERgYGBjJcbRNBD/0LI6BgXFDRl51///Pf9LfwMDAuBXjWa7r5CwJ1nk6WOwKAwNja0Ye4PLyfTKWsR5wMTAwzmRch7zZaFd+NE2CeFFuw8DA2I6RpHfFLUZDG8l2CwwGBsZGjJWgmYfItpSfp4kYGBgnMPIL+cEyH5tYOQZHqSEGBsYWjJUR0rwM1xbg6kExDAyMrRkrpf88UM6KdNdJal07xMDAuC1jZeS0DZHJYXgY6DEwMLZmvLcc1m63/p9wvVsMDIxNGe2gQ5u0zYYt8vYDBgbGCYw8sLZ1rfYkvTI0hoGBsTcjL9bPimvt8ETeTsDAwDiH0Y5krbcN1luV0UvBwMDYjpGXwJLgmN8hP/rWPVgMDIytGfnA1ixAzwptSRDHwMA4h9Heui2lFZ3Vtr2KgYFxAKMtyq983w6BFTMjGBgY2zGe5UoaALMDcEv9cRUDA2NrRr7aUYn6CFq2H+rhMAwMjJszhoX48giaJ5HD9BEDA+MAxmw6YxaI2/GvehQMAwPjeMZKMyDPUofZKwYGBsbCY/IW6fC3GBgYBzDasa122DRvFSSvCQMD4zTG0tHxrc3LvAz35vQRAwPjcxlfdFUi4PtknvIAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+	displayMath: [ ['$$', '$$'] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+	equationNumbers: { autoNumber: "AMS" },
+	extensions: ["AMSmath.js", "AMSsymbols.js", "AMScd.js", "mediawiki-texvc.js"],
+	Macros: {
+	    bm: "\\boldsymbol",
+	    dd: "\\mathop{}\\!\\mathrm{d}",
+	}
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '∑(っ °Д °;)っ';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(｡・`ω´･)';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
