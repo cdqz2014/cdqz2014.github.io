@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Introduction to Homology Group | 逸世凌虚的试剑亭 | 云行雨施，品物流形</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Homology Goup,Mathematica">
+    <meta name="description" content="Essence of Homology GroupTo have a quick view of homology, I’ll use non-formal language to introduce homology group and then take $T^{2}$ as an simple example t">
+<meta name="keywords" content="Homology Goup,Mathematica">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Introduction to Homology Group">
+<meta property="og:url" content="http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/index.html">
+<meta property="og:site_name" content="逸世凌虚的试剑亭">
+<meta property="og:description" content="Essence of Homology GroupTo have a quick view of homology, I’ll use non-formal language to introduce homology group and then take $T^{2}$ as an simple example to illustrate the motivation of its defin">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://wx3.sinaimg.cn/large/0060CjOygy1flnp4gxwfzj30jm0g73zm.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/large/0060CjOygy1flnp4iu154j30jm0g7jsi.jpg">
+<meta property="og:updated_time" content="2017-11-19T13:06:38.318Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Introduction to Homology Group">
+<meta name="twitter:description" content="Essence of Homology GroupTo have a quick view of homology, I’ll use non-formal language to introduce homology group and then take $T^{2}$ as an simple example to illustrate the motivation of its defin">
+<meta name="twitter:image" content="http://wx3.sinaimg.cn/large/0060CjOygy1flnp4gxwfzj30jm0g73zm.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="逸世凌虚的试剑亭" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Xiaodong Hu</h5>
+          <a href="mailto:cdqz2014@mail.ustc.edu.cn" title="cdqz2014@mail.ustc.edu.cn" class="mail">cdqz2014@mail.ustc.edu.cn</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/cdqz2014" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.zhihu.com/people/gai-nie-39/answers" target="_blank" >
+                <i class="icon icon-lg icon-link"></i>
+                zhihu
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Introduction to Homology Group</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Introduction to Homology Group</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2016-04-04T12:26:35.000Z" itemprop="datePublished" class="page-time">
+  2016-04-04
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Mathemtica-Physics/">Mathemtica Physics</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Essence-of-Homology-Group"><span class="post-toc-number">1.</span> <span class="post-toc-text">Essence of Homology Group</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Introduction to Homology Group/Introduction-to-Homology-Group"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Introduction to Homology Group</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2016-04-04 20:26:35" datetime="2016-04-04T12:26:35.000Z"  itemprop="datePublished">2016-04-04</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Mathemtica-Physics/">Mathemtica Physics</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Essence-of-Homology-Group"><a href="#Essence-of-Homology-Group" class="headerlink" title="Essence of Homology Group"></a>Essence of Homology Group</h1><p>To have a quick view of homology, I’ll use non-formal language to introduce homology group and then take $T^{2}$ as an simple example to illustrate the motivation of its definition and construction.</p>
+<p>Let’s take a look at $S^{2}$ and $T^{2}$.</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://wx3.sinaimg.cn/large/0060CjOygy1flnp4gxwfzj30jm0g73zm.jpg" alt="Triangulation of $S^2$" title="">
+                </div>
+                <div class="image-caption">Triangulation of $S^2$</div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://wx1.sinaimg.cn/large/0060CjOygy1flnp4iu154j30jm0g7jsi.jpg" alt="Triangulation of $T^2$" title="">
+                </div>
+                <div class="image-caption">Triangulation of $T^2$</div>
+            </figure>
+<p>It’s obvious that the topological structure of these two manifolds are essentially different. On the surface, $S^{2}$ has no hole while $T^{2}$ has one. However, we can mathematically reinterpret this difference as that any circle $S^{1}$ on the $S^{2}$ encloses a domain, that is, $\forall S^{1}\subset S^{2},\exists \text{close disk }B\subset S^{2} \text{ s.t. } S^{1}=\partial B$. On the contrary, there are two kinds of circle on $T^{2}$ that do not enclose any domain: latitude and longitude circle.(One incision but two boundaries)</p>
+<p>Through closely observation one can find that although one circle(either latitude or longitude one) cannot enclose a domain, two circle of the same type can do. What does this mean?</p>
+<blockquote>
+<p>Two longitude(or latitude) circle has no difference on reflecting topological structure of $T^{2}$, in other words, they belongs to the same class. Moreover, any longitude circle and latitude circle cannot enclose a domain, so they belongs to two different class.</p>
+</blockquote>
+<p>In mathematics, this compact(closed) class of sub-manifolds which does not enclose a domain and can be orientated are called ??? ( 英语不会。。可定向无边紧子流形类, there is no harm that I personally call this as OSCNB). They are exactly the generators of homology groups.</p>
+<p>Take $T^{2}$ for example, zero-dimension OSCNB is just the class $[p]$ that is generated by one point $p\in T^{2}$. Because any distinct point can enclose a segment on $T^{2}$, there are two kinds of one-dimensional OSCNB, as is discussed before(latitude and longitude ones). Additionally, $T^{2}$ itself is a two-dimensional OSCNB.</p>
+<p>In this way, k-dimensional homology group of  $T^{2}$, denoted as $H_{k}(T^{2},\mathbb{R})$, is a group showing as follow:</p>
+<p>$$\begin{align}<br>H_{0}(T^{2},\mathbb{R})&amp;=\{\alpha e_{0}|\alpha\in\mathbb{R}, e_{0}=[p]\}\cong\mathbb{R},\nonumber\\<br>H_{1}(T^{2},\mathbb{R})&amp;=\{\alpha_{1}e_{1}+\alpha_{2}e_{2}|\alpha_{i}\in\mathbb{R}, e_{i}=[\sigma_{i}], i=1,2\}\cong\mathbb{R}^{2},\nonumber\\<br>H_{2}(T^{2},\mathbb{R})&amp;=\{\alpha e_{2}|\alpha\in\mathbb{R}, e_{2}=[T^{2}]\}\cong\mathbb{R},\nonumber<br>\end{align}$$</p>
+<p>Here, $[\sigma_{1}]$ denotes class of longitude circles, while $[\sigma_{2}]$ denotes class of latitude circles.</p>
+<p>In the same way, k-dimensional homology group of $S^{2}$ is</p>
+<p>$$\begin{align}<br>H_{0}(S^{2},\mathbb{R})&amp;=\{\alpha e_{0}|\alpha\in\mathbb{R}, e_{0}=[p]\}\cong\mathbb{R},\nonumber\\<br>H_{1}(S^{2},\mathbb{R})&amp;=0,\nonumber\ <br>H_{2}(S^{2},\mathbb{R})&amp;=\{\alpha e_{2}|\alpha\in\mathbb{R}, e_{2}=[S^{2}]\}\cong\mathbb{R}.\nonumber<br>\end{align}$$</p>
+<p>In fact, for general n-dimensional compact manifolds $M$, its homology group is that which takes its OSCNB as generators and a commutative addition group $G$ as its coefficients. For instance, if $G=\mathbb{R}$, all k-dimensional homology group with real coefficients are</p>
+<p>$$\begin{align}<br>H_{k}(M,\mathbb{R})&amp;=\left\{\left.\sum_{j=1}^{m_{k}}\alpha_{j}e_{j}^{k}\right|\alpha_{j}\in\mathbb{R}, 1\leqslant j\leqslant m_{k}\right\}\cong\mathbb{R},\quad 0\leqslant k\leqslant n,\nonumber\\<br>H_{k}(M,\mathbb{R})&amp;=0,\quad\forall k&gt;n\nonumber<br>\end{align}$$</p>
+<p>The original purpose of constructing Homology group is to find topological invariants in topological space(to prove this we should show that homology groups defined here is invariant under partition, and that’s another topic), that is, two homeomorphism topological space must have isomorphism homology group. </p>
+<p>At this point can we safely conclude that $S^{2}$ and $T^{2}$ are topological distinct because their one-dimensional homology groups are different !</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2017-11-19T13:06:38.318Z" itemprop="dateUpdated">2017-11-19 21:06:38</time>
+</span><br>
+
+
+        
+        Page configurations see <a href="https://github"></a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="Xiaodong Hu">
+            Xiaodong Hu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Homology-Goup/">Homology Goup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mathematica/">Mathematica</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/&title=《Introduction to Homology Group》 — 逸世凌虚的试剑亭&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/&title=《Introduction to Homology Group》 — 逸世凌虚的试剑亭&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Introduction to Homology Group》 — 逸世凌虚的试剑亭&url=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2016/04/08/Einstein Equation-Variation/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Derivation of Einstein&#39;s Fields Equation</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2016/03/25/临江仙·加冠/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">临江仙·加冠</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'cdqz2014',
+            repo: 'cdqz2014.github.io',
+            oauth: {
+                client_id: '9feb99ec3ea4a29a12da',
+                client_secret: '33ddcb80b221846de3e9e1f39f9b7736fb245834',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢支持~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Xiaodong Hu &copy; 2015 - 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/&title=《Introduction to Homology Group》 — 逸世凌虚的试剑亭&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/&title=《Introduction to Homology Group》 — 逸世凌虚的试剑亭&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Introduction to Homology Group》 — 逸世凌虚的试剑亭&url=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2016/04/04/Introduction to Homology Group/Introduction-to-Homology-Group/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADJUlEQVR42u3awXLiQAwEUP7/p9lrDhvTLZEqMzyfKHB5/CYHpaV5POLr+ePKv79+WvI5v/PxFxc2Njb2h7Cfl9fsJdoN+u3X2cZdW7CxsbFPZc/KzPVibTW53qb2PV8YsbGxsb+YHT30sjglm5gXTmxsbGzsfQG7fon8VWaFEBsbGxs7byrlUSFvKm1K2vVGv62Xho2NjX179r4df5/PfzLfxsbGxr4x+1lemye37ae8ZNYKbGxs7IPYeQFo//XPhwqzwzqzxhM2Njb2eex8EDsrPPsB8HWDKY9Pb1seGxsb+/bsHLln5IXwvYEEGxsb+zz2rN2TkP5uW2cDaWxsbOyz2e3ym6M2SchJVsybU1EXDRsbG/vD2XlImDWMNqdlkq0pGkzY2NjYx7GTqJCEjdmdOWOzEcNeGjY2Nvbt2W3zfXbsZtZUmkWX4bEebGxs7I9l5+2h2bGb2QmZTeEs6jY2Njb2Qey8QZ/ElTZaJDGmjRzF4UtsbGzs49j5RrQD3bb8tE8oNgIbGxv7UHb76M0QNy+Nz9H1YvuwsbGxD2LPilZeQvICORshzLYPGxsb+yT2Zpl2VJAUwjaiDC9sbGzsg9izwtNuU07Kxwmz1tJ/noyNjY394exZs37TEsrrSLtKEZywsbGxj2O38SMpNvsg1I6B68EANjY29qHs2Rig/T6/Jy+l+QEjbGxs7JPYm5KzaQBt4srsztVoARsbG/vG7EQ/a+sMQ0JZRJMB8K9nlLCxsbGPYO9b8G10ycfAeYNpGJywsbGxj2a3vLakXa+bR5e2LYWNjY19Nju6NW4Y7beyHRvkx32wsbGxT2W3JSqJKO0mtrGnHVE89pUZGxsb+8bsdty7HwnP5s+zGTU2Njb2qexZnGgx+QslkSNfMQoh2NjY2B/ObgvALAzMXrodYLTtJ2xsbOyT2LOitWk5zQLP5jAQNjY29jew25CwP3bTtp/yUXRRwLCxsbG/kr2JCvvwk/8xXhQ/bGxsbOxRaz6PMfuRc3T4EhsbG/sgdhIe2tiQb9CmELYxBhsbG/s89r5UzBaYla42IG3WwsbGxr49+x8yhmkE87uiDQAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+	displayMath: [ ['$$', '$$'] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+	equationNumbers: { autoNumber: "AMS" },
+	extensions: ["AMSmath.js", "AMSsymbols.js", "AMScd.js", "mediawiki-texvc.js"],
+	Macros: {
+	    bm: "\\boldsymbol",
+	    dd: "\\mathop{}\\!\\mathrm{d}",
+	}
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '∑(っ °Д °;)っ';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(｡・`ω´･)';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
