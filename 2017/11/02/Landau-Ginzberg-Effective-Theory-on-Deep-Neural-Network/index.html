@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Landau-Ginzberg Effective Theory on Deep Neural Network | 逸世凌虚的试剑亭 | 云行雨施，品物流形</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Machine Learing,Ginzberg-Landau Theory,Cluster Expansion,Renormalization Group,Boltzmann Machine">
+    <meta name="description" content="Deep neural network (DNN) works in an amazing effeciency in machine learing but cannot be well-explained by accurate mathematics. Reviewing the one-to-one corre">
+<meta name="keywords" content="Machine Learing,Ginzberg-Landau Theory,Cluster Expansion,Renormalization Group,Boltzmann Machine">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Landau-Ginzberg Effective Theory on Deep Neural Network">
+<meta property="og:url" content="http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/index.html">
+<meta property="og:site_name" content="逸世凌虚的试剑亭">
+<meta property="og:description" content="Deep neural network (DNN) works in an amazing effeciency in machine learing but cannot be well-explained by accurate mathematics. Reviewing the one-to-one correspondence between Restricted Boltzmann m">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://wx4.sinaimg.cn/large/0060CjOygy1flnpp1giw5j30ff0g2408.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/large/0060CjOygy1flnpufbfkqj30hx0duq4o.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/large/0060CjOygy1flnq45ixpzj30j004w3yq.jpg">
+<meta property="og:updated_time" content="2017-11-19T14:51:03.502Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Landau-Ginzberg Effective Theory on Deep Neural Network">
+<meta name="twitter:description" content="Deep neural network (DNN) works in an amazing effeciency in machine learing but cannot be well-explained by accurate mathematics. Reviewing the one-to-one correspondence between Restricted Boltzmann m">
+<meta name="twitter:image" content="http://wx4.sinaimg.cn/large/0060CjOygy1flnpp1giw5j30ff0g2408.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="逸世凌虚的试剑亭" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Xiaodong Hu</h5>
+          <a href="mailto:cdqz2014@mail.ustc.edu.cn" title="cdqz2014@mail.ustc.edu.cn" class="mail">cdqz2014@mail.ustc.edu.cn</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/cdqz2014" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.zhihu.com/people/gai-nie-39/answers" target="_blank" >
+                <i class="icon icon-lg icon-link"></i>
+                zhihu
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Landau-Ginzberg Effective Theory on Deep Neural Network</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Landau-Ginzberg Effective Theory on Deep Neural Network</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-11-01T18:14:27.000Z" itemprop="datePublished" class="page-time">
+  2017-11-02
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Machine-Learning/">Machine Learning</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Machine-Learning/Course-Paper/">Course Paper</a></li></ul></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Exact-Representation-of-Physical-Models"><span class="post-toc-number">1.</span> <span class="post-toc-text">Exact Representation of Physical Models</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Renormalization-Group-of-Ising-Model"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Renormalization Group of Ising Model</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Understanding-of-Neural-Network-with-Points-of-Effective-Fields-Theory"><span class="post-toc-number">2.</span> <span class="post-toc-text">Understanding of Neural Network with Points of Effective Fields Theory</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Landau-Ginzberg-Theory"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Landau-Ginzberg Theory</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Effective-Polynomial-of-Hamiltonian-in-ML"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Effective Polynomial of Hamiltonian in ML</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Conclusion-and-Perspectives"><span class="post-toc-number">3.</span> <span class="post-toc-text">Conclusion and Perspectives</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Landau-Ginzberg Effective Theory on Deep Neural Network</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-11-02 02:14:27" datetime="2017-11-01T18:14:27.000Z"  itemprop="datePublished">2017-11-02</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Machine-Learning/">Machine Learning</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Machine-Learning/Course-Paper/">Course Paper</a></li></ul></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>Deep neural network (DNN) works in an amazing effeciency in machine learing but cannot be well-explained by accurate mathematics. Reviewing the one-to-one correspondence between Restricted Boltzmann machines (RBM) and configuration space renomalization groups (RG), the well-developed techniques in studying quantum fields theory (QFT), we are motivated to apply the effective fields theory, particularly Landau-Ginzberg one, to explain the expressibility and mechnism of a general DNN. Similar structures of the effective Hamiltionian are discovered, and we propose a new model based on the systematic cluster expansion approach to improve the performance of DNN without adding extra layer. Supported by the high efficiency in counting low orders Feynman diagrams in computation of scattering amplitute by QFT, the upgrade of DNN we propose is believed to provide a higher efficiency than extending the depth of DNN if the coarse graining procedure has neared the fixed point of RG flows. </p>
+<a id="more"></a>
+<h1 id="Exact-Representation-of-Physical-Models"><a href="#Exact-Representation-of-Physical-Models" class="headerlink" title="Exact Representation of Physical Models"></a>Exact Representation of Physical Models</h1><h2 id="Renormalization-Group-of-Ising-Model"><a href="#Renormalization-Group-of-Ising-Model" class="headerlink" title="Renormalization Group of Ising Model"></a>Renormalization Group of Ising Model</h2><p>The <em>Boltzman machine</em> in ML is a stochastic binary whose composition consists of stochastic neurons<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. Coincidentally, in physics we have a large fields of binary-valued spin models on lattice to explain the wide properties of magnetism. A typical and famous one is the <em>Ising model</em> . Ising model is a $N$ spin qubit system dominated by the exchange interaction (here we consider the general case)<br>$$H(\{s\},\bm{K})=-\sum_iK_i s_i-\sum_{ij}K_{ij}s_i s_j-\cdots.$$<br>By statistical theory of canonical ensemble, we have the partition function $Z\equiv\mathrm{Tr}\,\hat{\rho}=\mathrm{Tr}\,e^{-\beta \hat{H}(\{s\})}$ and the free energy $F=-kT\ln Z$.</p>
+<p>Physicist has developed a systematic and powerful technique called <em>renormalization group</em> to describe the distinct behaviors of fields theory on different energy levels<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>, which was then generalized to the change of lengh scale as well and perfectly handled the description of divergence beahavior near critical point of phase transitions<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>. The heart of the point is, when we alter the scale of an arbitrary system, the physical laws behind it still holds without any change of form. To put it more explicitly, we take the Ising model here as one example, as is shown in <strong>fig:1</strong></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://wx4.sinaimg.cn/large/0060CjOygy1flnpp1giw5j30ff0g2408.jpg" alt="**Coarse graining process of a $8	imes8$ lattice**. In each step of rescaling (illustrated by different colors of dashed squares), spins in each block is averaged and renormalized but holds the configuration of the square lattice." title="">
+                </div>
+                <div class="image-caption">**Coarse graining process of a $8	imes8$ lattice**. In each step of rescaling (illustrated by different colors of dashed squares), spins in each block is averaged and renormalized but holds the configuration of the square lattice.</div>
+            </figure>
+<p>Though introducing new blocks of spins and average as well as normalize them, i.e., $\Sigma_I=\frac{1}{R}\sum_{i\in I}s_i$, where $R$ is a normalize factor to make $\Sigma_I$ still takes value of either $-1$ or $+1$, the details of initial spins distribution are cancelled out and we are left with the inner structure of the system. An this process is called \emph{coarse graining}.\par<br>Denote $\{s\}$ as the initial spin distribution, $\{s’\}$ the next coarse grained ones and $\lambda$ the scaling factor, by the <strong>scaling hypothesis</strong><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup>, we still have<br>$$H^{RG}_\lambda(\{s’\},\bm{K’})=-\sum_iK’_i s’_i-\sum_{ij}K’_{ij}s’_i s’_j-\cdots,$$<br>where $\bm{K’}$ describes the new interaction between coarse grained spins, or hidden spins. In mathematics literature, mapping $f_\lambda:\bm{K}\rightarrow\bm{K’}$ forms a semigroup action since it is irreversible, and we call $\{f\}$ the RG group. If the GR-group flow reach the fixed point in the parameter space[^Francesco-CFT]. That is,<br>$$\bm{K_c}=\bm{f}(K_c),$$<br>then the difference of free energy of two coarse graining process will vanish<br>$$\Delta F=0\implies\mathrm{Tr}\,e^{-\beta T_\lambda(\{s\},\{s’\})}=0,$$<br>where $T_\lambda(\{s\},\{s’\})\equiv H(\{s\},\bm{K})-H_\lambda^{RG}(\{s’\},\bm{K’})$.</p>
+<hr>
+<p>Next, we are to map RG to the <strong>Restriced Boltzman Machine(RBM)</strong>. The stochasitic neurons of the RBM are partitioned into two groups, <strong>visible neurons</strong> and <strong>hidden neurons</strong>. Visible neurons provide an interface between the network and the ambient environment and during the training process they are all clumped onto specific states determined by the environment. The hidden neurons, however, always operate freely that they are used to explain the underlying constraints  contained in the environmental input vectors<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>.<br>Coupling between one layer to the next coarse grained layer is characterized by the operator $T_\lambda(\{s\},\{s’\})$, in RBM, in fact, we also has a analogous object called joint energy between hidden neurons and visible neurons<br>$$\begin{equation}\label{2.1}<br>    E(\{v_i\},\{h_j\})=\sum_jb_jh_j+\sum_{ij}v_iw_ijb_j+\sum_ic_iv_j,<br>\end{equation}$$<br>where $\{v\}$ denote the visible unit while $\{h_i\}$ denote the hidden unit.</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://wx1.sinaimg.cn/large/0060CjOygy1flnpufbfkqj30hx0duq4o.jpg" alt="**Restricted Boltzman Machine**. The connections between the visible and hidden neurons are symmetric. Unlike general BM, such symmetric connections do not extend to the visible and hidden neurons." title="">
+                </div>
+                <div class="image-caption">**Restricted Boltzman Machine**. The connections between the visible and hidden neurons are symmetric. Unlike general BM, such symmetric connections do not extend to the visible and hidden neurons.</div>
+            </figure>
+<p>Similarly we can define the joint probability distribution<br>$$\begin{equation}\label{2.2}<br>    p_\lambda(\{v\},\{h\})=\dfrac{1}{Z}e^{-E(\{v\},\{h\})}<br>\end{equation}$$<br>and variational distribution for visible neurons as well<br>$$\begin{equation}\label{2.3}<br>    p_\lambda(\{v\})\equiv\sum_{\{h\}}p_\lambda(\{v\},\{h\})=\mathrm{Tr}_{h}\,p_\lambda(\{v\},\{h\}).<br>\end{equation}$$<br>And the training tast is to minimize the Kullback-Leibler divergence between the visible distribution to the true one<br>$$\begin{equation}\label{2.4}<br>    D_{KL}\big(P(\{c\})\mid\mid p_\lambda(\{v\})\big)=\sum_{\{v\}}P(\{v\})\ln\left(\dfrac{P(\{v\})}{p_\lambda(\{v\})}\right).<br>\end{equation}$$<br>Coupling between coarse grained states are encoded by the operator $T_\lambda(\{v\},\{h\})$, while in RBM an analogous role is played by the joint energy $E(\{v\},\{h\})$. In fact, equation<br>$$\begin{equation}\label{2.5}<br>    T(\{v\},\{h\})=-E(\{v\},\{h\})+H[\{v\}].<br>\end{equation}$$<br>one-to-one maps the RG scheme to deep RBM, as is proven below.\par<br>By definition of $T$, we have<br>$$\dfrac{1}{Z}e^{-H_\lambda^{RG}[\{h\}]}=\dfrac{1}{Z}\mathrm{Tr}_v\,e^{T_\lambda(\{v\},\{h\})-H[\{v\}]}.$$<br>Substituting the claimed Eq. $\eqref{2.5}$, one immediately gets<br>$$H_\lambda^{RG}[\{h\}]=H_\lambda^{\text{RBM}}[\{h\}]$$<br>and we are done.</p>
+<p>Since $\lambda$ in RBM indicates the two pair of hidden and visible layers, by this proposition we can make a corollary that the layer of DNN plays the same roles of RG flows reaching the fixed point. And this also explains why the depth of the NN counts.</p>
+<h1 id="Understanding-of-Neural-Network-with-Points-of-Effective-Fields-Theory"><a href="#Understanding-of-Neural-Network-with-Points-of-Effective-Fields-Theory" class="headerlink" title="Understanding of Neural Network with Points of Effective Fields Theory"></a>Understanding of Neural Network with Points of Effective Fields Theory</h1><p>In an arbitrary task of prediction in machine learning, probability distribution $p(y|x)$ is the crux we are concerned about, where $x$ is the vector in sampling space and $y$ the model variables. Explicitly, in a typical classification problem of aninmals, we interpret $x$ as features of testing pictures, such as vectors taking values in $\{\text{fur}, \text{whikser}, \text{eye},\cdots\}$ and $y$ as animals $\{\text{cat}, \text{dog}, \text{human}, \cdots\}$ we want to classify. As a physical example, we may interpret $x$ as the input spin configuration and $y$ the set of physical phases such as high/low temperature phases<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> and long-length entangled topological states<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup>.<br>Anyway, by Bayer’s theorem, we always have<br>$$p(y|x)=\dfrac{p(x|y)p(y)}{\displaystyle\sum_{y’}p(x|y’)p(y’)}.$$<br>If we endow the two negative logarithms with physical meanings as following:<br>$$\begin{align}<br>H_y(x)&amp;:=-\ln p(x|y),\label{3.1}\\<br>\mu_y&amp;:=-\ln p(y),\label{3.2}<br>\end{align}$$<br>then Bayer’s theorem can be expressed as a more familiar form in statistical physics<br>$$\begin{equation}\label{3.3}<br>    p(y|x)=\dfrac{1}{Z(x)}e^{-(H_y(x)-\mu_y)},<br>\end{equation}$$<br>where partition function<br>$$Z(x)\equiv\displaystyle\sum_y e^{-(H_y(x)-\mu_y)}.$$<br>where $H_y$ is Hamiltonian and $\mu_y$ the chemical potential of the physical system.</p>
+<p>The recasting of conditional probability by Hamiltonian and introducing of chemical potential is NOT futile as it seems. One the one hand, the task of finding an arbitrary function of our system was converted to find a quantity of rich physical meaning, and then we can understand the mechinism of neuron network in an thoroughly different perspective and may even discern some inner structure of NN according to the propeties of Hamiltonian that is widely used in theoretical physics but not revealed by experts in ML yet.</p>
+<h2 id="Landau-Ginzberg-Theory"><a href="#Landau-Ginzberg-Theory" class="headerlink" title="Landau-Ginzberg Theory"></a>Landau-Ginzberg Theory</h2><p>Let us start with reviewing the <strong>Landau-Ginzberg fields</strong> in effective theory of statistical fields. Through introducing variables under <strong>mesoscopic</strong> scales under the assumption<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup> that $\lambda\gg\dd x\gg a$, the partition function of microscopic states can always be re-expressed by the coarse grained mesoscopic fields<br>$$\begin{equation}\label{3.4}<br>    Z(T)=\mathrm{Tr}\,e^{-\beta H_{\text{micro}}}=\int{\mathcal D}\psi\,\mathcal{W}[\psi(\bm{x})],<br>\end{equation}$$<br>where the measure $\mathcal{D}\psi$ in Feynman path integral[^nakahara2003geometry] runs over all the possible configuration of fields in the function space and $\mathcal{W}[\psi]$ is the weights of each configuration. Although obtaining the precise form of $\mathcal{W}[\psi]$ is actually not easier than exactly solving the full problem with accurate partition function, is is possible to describe it in terms of only a few <strong>phenominological parameters</strong> but not a large number of microscopic canonical variables. If we define the effective Hamiltonian of the system by<br>$$\beta H[\psi(\bm{x})]:=-\ln\mathcal{W}[\psi(\bm{x})],$$<br>then it can be expanded to a general form that<br>$$\begin{equation}\label{3.5}<br>    \beta H=\int \dd\bm{x}~\Phi[\bm{x},\psi(\bm{x}),\nabla\psi(\bm{x}),\nabla^2\psi(\bm{x}),\cdots].<br>\end{equation}$$<br>It seems that what we have done is merely equivalent mathematical transformation, but since now all the variable in our Hamiltonion are mesoscopic ones, we can apply the symmetries of system or impose extra demands of our desired theory such as locality and casuality. These simple consideration will dramatically simplify the above complicated expression. \par<br>In condensed matter physics, solid lattice are ususually regared as invariant under translation (temporarilly neglect all the defects), so does the explicit form of $\Phi$. So<br>$$\Phi[\bm{x},\psi(\bm{x}),\nabla\psi(\bm{x}),\cdots]=\Phi[\psi(\bm{x}),\nabla\psi(\bm{x}),\cdots].$$<br>Likewise, lattice are also invariant under rotations, dropping all the odd power of gredient of fields operators:<br>$$\begin{align}<br>    \beta H&amp;=\int\dd\bm{x}~\Phi[\psi(\bm{x})^2,\nabla^2\psi(\bm{x}),\cdots]\\<br>    &amp;=\int\dd\bm{x}~K_1\psi^2+K_2\psi^4+\cdots+M_1(\nabla\psi)^2+M_2(\nabla\psi)^4\nonumber\\<br>    &amp;\qquad+\cdots+N_1\psi^2(\nabla\psi)^2+N_2\psi^4(\nabla\psi)^4+\cdots.\nonumber<br>\end{align}$$<br>Most importantly, in many cases involving merely short-range interactions (even long-range interaction such as Coulumb one becomes short-range due to the screening effect<sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup>), locality guarantees that only the lower order terms make remarkable contribution in Hamiltonian, so we are finally left with<br>$$\begin{equation}\label{3.6}<br>    \beta H=\int\dd\bm{x}~\bigg(K_1\psi^2+K_2(\nabla\psi)^2\bigg)+\text{interactive perturbation},<br>\end{equation}$$<br>where contribution from interaction can be carefully analysis by counting Feynman diagrams<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> (Though regularization and renomarlization in computation is still too tough for humans to do).</p>
+<h2 id="Effective-Polynomial-of-Hamiltonian-in-ML"><a href="#Effective-Polynomial-of-Hamiltonian-in-ML" class="headerlink" title="Effective Polynomial of Hamiltonian in ML"></a>Effective Polynomial of Hamiltonian in ML</h2><p>Although the procedure constructing Hamiltonian showing above leave an amazing impression in simplification, one may first doubt the implicit hypothesis that such polynomial effective Hamiltonian in physics is <strong>complete</strong> in ML, i.e., any wanted function can be accurately evaluated by a sufficient large network. In fact, by the celebrated <strong>Stone-Weierstrass thoerem</strong> in real analysis going that polynomial functions can approximate continuous functions in arbitrary accuracy, DNN, denoted by<br>$$\begin{equation}\label{3.7}<br>    f(\bm{x})=\bm{\sigma}_n\bm{A}\cdots\bm{\sigma}_2\bm{A}_2\bm{\sigma}_1\bm{A}_1\bm{x}<br>\end{equation}$$<br>in our notation, where $\bm{\sigma}_i$ indicate the non-linear activation function such as sigmoid, Relu, or softmax functions, and $\bm{A}_i$ indicates affine transformation that $\bm{A}_i\bm{x}\equiv\bm{W}_i\bm{x}+\bm{b}_i$, should also does, provided that the polynomial structure still holds under the action of the neuron network $f$. In fact, a simple neural network of the form $f=\bm{\sigma}_2\bm{\sigma}\bm{A}_1$ with input layer, hidden layer and output layer size 2,4 and 1, exactly satisfies this condition<sup id="fnref:12"><a href="#fn:12" rel="footnote">12</a></sup>.</p>
+<p>Therefore, in ML we can also merely focus on the polynomial series (at a specific layer $\lambda$)<br>$$\begin{align}\label{3.8}<br>H_{y}(\bm{x};\lambda)&amp;=h(\lambda)+\sum_ih_{\lambda i}x_i+\sum_{i&lt;j}h_{ij}(\lambda )x_ix_j\nonumber\\<br>&amp;+\sum_{i&lt;j&lt;k}h_{ijk}(\lambda)x_ix_jx_k+\cdots,<br>\end{align}$$<br>where $x_i$ are the $i$th component of the vector $\bm{x}$ at layer $\lambda$ (not have to be the same size as the input layer), and correlation between layers $\{h,h_i,h_{ij},\cdots\}$ are also labeled by the coarse grained steps $\lambda$.</p>
+<p>The similar form of Hamiltonian in ML is a reminiscent of that in Landau-Ginzberg theory. As is seen before, translation and rotation symmetry of the physical system is certainly not powerful in simplifying Hamiltonian as locality does, which truncates at finite terms and leaves with effective ones, regarding the other terms as perturbation. But we can still find similar operation in ML immitating the translation behaviors-convolution of grayscale pixels, or CNN. And interesting and strange enough, there hitherto seems to exist no appropriate algorithm about extracting rotational symmetry in pattern recognition.</p>
+<p>What really counts in simplifying DNN, in physics perspective, is condition of locality. In physics we attrbute the quadratic form of fundament equations deirved from variational derivatives of action to the finite correlation of separate parts of the system, where quadratic Hamiltonian is enough to grasp the free thoery. For example, the Maxwell equation governing the electromagnetism, the Navier-Stokes equations governing fluid dynamics, and even the non-linear Einstein’s equation of gravitational fields are all quadratic. Another explanation of the emergence of low order effective Hamiltonian central limit theorem, which dominate large number of probability distribution in ML. The commonality in fundamental equations of theoretical physics listed here does not indicate the same behavier on DNN, since we’ve not found an appropriate way to define the ``measure’’ of neurons in the same layer, but this does enlighten us a new angle to understand the training results of neuron network.</p>
+<p>After training of a huge neuron network, one may find some correlation between neurons, namely, tensor coefficients in Hamiltonian $h_{ijk\cdots}$, look extremely <strong>sparse</strong> that has little contribution on evalution of output, and hence can be dropped out from the tumid network with little influence on the new slender one. In this sense, we can safely concludes that <strong>locality corresponds to sparsity</strong> in ML.<br>A typical and non-trivial example is deep RBM we talked before, in which the joint energy (Hamiltonian) between every two visible neurons and hidden neurons is defined to be binanry form $\eqref{2.1}$. Though the structure of RBM looks disparate from the general DNN we write before in $\eqref{3.7}$, if we treat the visible-hidden two layers pairs as in the same ``layer’’ (in the sense I introduced in $\eqref{3.7}$), i.e., they are now sub-layers of one specific layer, deep RBM still embody the spirit of effective theory with the Hamiltonian<br>$$H_\lambda=\int\dd\bm{x}~\bigg[\bigg(K_1(\lambda)\psi+M_1(\lambda)\nabla\psi\bigg)+N_1(\lambda)\psi\nabla\psi\bigg]$$<br>if we apply the correspondence $h_i\leftrightarrow\psi$ and $v_i\leftrightarrow\nabla\psi$. One can see that this is the lowest expanding of Hamiltonian with interactions $N_1(\lambda)\psi\nabla psi$. The reason why we drop the other two two-order free parts $K_2(\lambda)\psi^2$ and $M_2(\lambda)(\nabla\psi)^2$ is that we are now considering the RBM, rather than general BM.</p>
+<p>Motivated by the common procedures of counting Feynman diagrams in quantum fields theory, one should naturally attempt to include higher order terms unless we reach the optimization order of <strong>asymptotic series</strong><sup id="fnref:11"><a href="#fn:11" rel="footnote">11</a></sup> :</p>
+<p>$$H=H^{(1)}_\text{free}+H^{(2)}_{\text{int.}}+H^{(3)}_{\text{high order}}+\cdots,$$</p>
+<p>where $H^{(3)}$ includes self-coupling terms $K_3\psi^3$, $M_3(\nabla\psi)^3$ and high order interactions $N_{3,1}\psi^2\nabla\psi$, $N_{3,1}\psi(\nabla\psi)^2$. But at present the planar diagram in ML to visualize the DNN never works and we have to carefully count the coupling between neurons at the same layer (in the new sense) in the new notation used in <strong>cluster expansion</strong> introduced by Mayer<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>.</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://wx4.sinaimg.cn/large/0060CjOygy1flnq45ixpzj30j004w3yq.jpg" alt="**The Third Order Couplings between Neurons**. Unlike the notation widely used in ML that lines between neurons denotes the affine transformation or any other mathematical operations, here lines in diagrams just represent the couplings without any mathematical meaning. Black circles represent the hidden sub-layers while white ones represent the visible sub-layers." title="">
+                </div>
+                <div class="image-caption">**The Third Order Couplings between Neurons**. Unlike the notation widely used in ML that lines between neurons denotes the affine transformation or any other mathematical operations, here lines in diagrams just represent the couplings without any mathematical meaning. Black circles represent the hidden sub-layers while white ones represent the visible sub-layers.</div>
+            </figure>
+<p>Taking the step in consideration of high-order neuron networks, we are now reaching an entirely new world that experts in ML seems to ignore. Hopefully adding an extra interaction among neuron in a layer may improve much more than adding layers behind the NN in practical training, since by our discussion before, adding layers just helps reaching close to the fixed point under actions of RG, but the real fixed points will differ from that described by the low order effective Hamiltonian.</p>
+<h1 id="Conclusion-and-Perspectives"><a href="#Conclusion-and-Perspectives" class="headerlink" title="Conclusion and Perspectives"></a>Conclusion and Perspectives</h1><p>However, even though locality, or sparcity widely exists in physics and ML, people still discover some important exceptions in recent year. In fractional quantum hall effect, a strong-correlated system in condensed matter physics, for example, repulsive interaction between electrons are not screened as it usually does in metal but play a central role in the emergence of a series of strange phenomenon such as fractional charge and boundary topological state instead. In this case, our expanding of Hamiltonian by orders is proved to be invalid because of the coupling constant is now large enough to make the series divergence. Wen<sup id="fnref:10"><a href="#fn:10" rel="footnote">10</a></sup> divided the theory in condensed matter physics into two parts: classic ones are those that can be well explained by Ginzberg-Landau theory, the other modern ones has not be well-studies up to now so there is no unified theory describing them. Despite the large amounts of DNN we discussed in this paper that can be well-understanded and even upgraded by Landau-Ginzberg theory, we believe that there still exits some structure of NN that corrsponds to the modern object in condensed matter physics such as topological states and topological orders, and indeed many groups<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> are working on the quantum algorithm basing on these strongly-correlated modern concepts.</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">@book{haykin2009neural,<br>title={Neural networks and learning machines},<br>author={Haykin, Simon S},<br>volume={3},<br>year={2009},<br>publisher={Pearson Upper Saddle River, NJ, USA:}<br>}</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;">@book{peskin1995introduction,<br>title={An introduction to quantum field theory},<br>author={Peskin, Michael Edward},<br>year={1995},<br>publisher={Westview press}<br>}</span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;">@article{Wilson-Renormalization&amp;Critical,<br>title={The renormalization group and critical phenomena},<br>author={Wilson, Kenneth G},<br>journal={Reviews of Modern Physics},<br>volume={55},<br>number={3},<br>pages={583},<br>year={1983},<br>publisher={APS}<br>}</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline-block; vertical-align: top;">@book{goodfellow2016deep,<br>title={Deep learning},<br>author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron},<br>year={2016},<br>publisher={MIT press}<br>}</span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline-block; vertical-align: top;">@article{carrasquilla2017machine,<br>title={Machine learning phases of matter},<br>author={Carrasquilla, Juan and Melko, Roger G},<br>journal={Nature Physics},<br>year={2017},<br>publisher={Nature Research}<br>}</span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">6.</span><span style="display: inline-block; vertical-align: top;">@article{top,<br>title={Exact machine learning topological states},<br>author={Deng, Dong-Ling and Li, Xiaopeng and Sarma, S Das},<br>journal={arXiv preprint arXiv:1609.09060},<br>year={2016}<br>}</span><a href="#fnref:6" rev="footnote"> ↩</a></li><li id="fn:7"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">7.</span><span style="display: inline-block; vertical-align: top;">@book{Francesco-CFT,<br>title={Conformal field theory},<br>author={Francesco, Philippe and Mathieu, Pierre and S{‘e}n{‘e}chal, David},<br>year={2012},<br>publisher={Springer Science &amp; Business Media}<br>}</span><a href="#fnref:7" rev="footnote"> ↩</a></li><li id="fn:8"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">8.</span><span style="display: inline-block; vertical-align: top;">@book{Kardar-fields,<br>title={Statistical physics of fields},<br>author={Kardar, Mehran},<br>year={2007},<br>publisher={Cambridge University Press}<br>}</span><a href="#fnref:8" rev="footnote"> ↩</a></li><li id="fn:9"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">9.</span><span style="display: inline-block; vertical-align: top;">@book{phillips2012advanced,<br>title={Advanced solid state physics},<br>author={Phillips, Philip},<br>year={2012},<br>publisher={Cambridge University Press}<br>}</span><a href="#fnref:9" rev="footnote"> ↩</a></li><li id="fn:10"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">10.</span><span style="display: inline-block; vertical-align: top;">@book{Wen-QFT,<br>title={Quantum field theory of many-body systems: from the origin of sound to an origin of light and electrons},<br>author={Wen, Xiao-Gang},<br>year={2004},<br>publisher={Oxford University Press on Demand}<br>}</span><a href="#fnref:10" rev="footnote"> ↩</a></li><li id="fn:11"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">11.</span><span style="display: inline-block; vertical-align: top;">@book{nakahara2003geometry,<br>title={Geometry, topology and physics},<br>author={Nakahara, Mikio},<br>year={2003},<br>publisher={CRC Press}<br>}</span><a href="#fnref:11" rev="footnote"> ↩</a></li><li id="fn:13"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">13.</span><span style="display: inline-block; vertical-align: top;">@article{why-deep&amp;cheap,<br>title={Why does deep and cheap learning work so well?},<br>author={Lin, Henry W and Tegmark, Max and Rolnick, David},<br>journal={Journal of Statistical Physics},<br>volume={168},<br>number={6},<br>pages={1223–1247},<br>year={2017},<br>publisher={Springer}<br>}</span><a href="#fnref:13" rev="footnote"> ↩</a></li></ol></div></div>
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2017-11-19T14:51:03.502Z" itemprop="dateUpdated">2017-11-19 22:51:03</time>
+</span><br>
+
+
+        
+        Page configurations see <a href="https://github"></a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="Xiaodong Hu">
+            Xiaodong Hu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Boltzmann-Machine/">Boltzmann Machine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cluster-Expansion/">Cluster Expansion</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ginzberg-Landau-Theory/">Ginzberg-Landau Theory</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Machine-Learing/">Machine Learing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Renormalization-Group/">Renormalization Group</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/&title=《Landau-Ginzberg Effective Theory on Deep Neural Network》 — 逸世凌虚的试剑亭&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/&title=《Landau-Ginzberg Effective Theory on Deep Neural Network》 — 逸世凌虚的试剑亭&source=Deep neural network (DNN) works in an amazing effeciency in machine learing b..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Landau-Ginzberg Effective Theory on Deep Neural Network》 — 逸世凌虚的试剑亭&url=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/11/18/Mathjax-on-my-Hexo/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Mathjax on my Hexo</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2016/04/08/Einstein Equation-Variation/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Derivation of Einstein&#39;s Fields Equation</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'cdqz2014',
+            repo: 'cdqz2014.github.io',
+            oauth: {
+                client_id: '9feb99ec3ea4a29a12da',
+                client_secret: '33ddcb80b221846de3e9e1f39f9b7736fb245834',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢支持~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Xiaodong Hu &copy; 2015 - 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/&title=《Landau-Ginzberg Effective Theory on Deep Neural Network》 — 逸世凌虚的试剑亭&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/&title=《Landau-Ginzberg Effective Theory on Deep Neural Network》 — 逸世凌虚的试剑亭&source=Deep neural network (DNN) works in an amazing effeciency in machine learing b..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Landau-Ginzberg Effective Theory on Deep Neural Network》 — 逸世凌虚的试剑亭&url=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/11/02/Landau-Ginzberg-Effective-Theory-on-Deep-Neural-Network/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADNUlEQVR42u3aSW7jQBAEQP//05yrAY+EzCoJEFvBk0Fz6WgeSrX8/MTH9ev4e+b3+fZ49Jy/z3z0rs3bsbGxsc9gX0+P59ckT04WnTwz2fTEgo2NjX0qO3lNHniePzMJTvk1z+96eB4bGxv7i9lXcLShcR+osLGxsbFn7LxWkywluTfZJmxsbOzvZG/CTJuizJaebM1bamnY2NjYH8/Ou6Kf//db+tvY2NjYH8y+ymPTPMgX17aZawU2Njb2Qew8AOTloXaz3lF4itaPjY2NfQQ7f+gsvLXBLxnHaQPhf7YPGxsb+yD2ZvzlVWM3OSlPfqJQh42NjX0QOx+ISWB5INw0iWdJCDY2NvbZ7NnIzmzUZha0ktCYB11sbGzsk9htSShPVDZFqzxYtgUmbGxs7PPY7RhNXtzfFK1elSZtNgsbGxv789lJ+rEZqcnLT21Rqf1I2NjY2KeyZ43bfLnDHsUokcjLW9jY2NgnsTfBo23K5p2KWUO3SFewsbGxD2LPGq6z1KItTm3+G20BNjY29hHsfCgnKSrlgSofD2pDV6TAxsbGPog9KyrtWwWbUZ42HSriNjY2NvbN2W3VJWqmrjdlFsyKohI2Njb2Eex9C7ZtBmzGgzZXPuyQYGNjYx/Bbss0M1IbR/LnzO7CxsbGvjt71qBNfuLni0s2N29jRJ8QGxsb+yD2LEnYpBB5aJwFwrqWho2NjX1z9qxR2m5NO1izGSGKPic2Njb2Qew8RM0KQO2m5OM7SZHrBXEbGxsb+ybsTW8hT06SpefjPpsSFTY2NvbZ7Bkpbxi0G7dpQs+KUNjY2Nh3ZOfhJ//p3zaJ23JVm/ZEgzvY2NjYN2e35aE2kUgC0ubt+QfAxsbGPpvdvjIPSLO0IQl+s7QKGxsb+wz2VR6zIlS7uE1YjYIrNjY29kHsV7UKNglJO8qTpzHD8R1sbGzsG7I3Jfh90rLf1ra1gI2NjX0quy3Z54WkZEPbNCNPjR6ewcbGxv5idp5gzGo4Scth1h7GxsbGxp6Ve2Zl/Xabhv1tbGxs7IPYecKwKScloa4dshzehY2NjX0QezNM076sDWD5yOZsuBMbGxv75ux/oqqRzaL9E6cAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+	displayMath: [ ['$$', '$$'] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+	equationNumbers: { autoNumber: "AMS" },
+	extensions: ["AMSmath.js", "AMSsymbols.js", "AMScd.js", "mediawiki-texvc.js"],
+	Macros: {
+	    bm: "\\boldsymbol",
+	    dd: "\\mathop{}\\!\\mathrm{d}",
+	}
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '∑(っ °Д °;)っ';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(｡・`ω´･)';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
