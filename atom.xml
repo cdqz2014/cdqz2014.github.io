@@ -89,7 +89,7 @@
     <link href="http://yoursite.com/2017/03/20/Mathematical-Physics-Category-Theory/"/>
     <id>http://yoursite.com/2017/03/20/Mathematical-Physics-Category-Theory/</id>
     <published>2017-03-20T06:12:05.000Z</published>
-    <updated>2017-11-20T07:33:32.982Z</updated>
+    <updated>2017-11-23T00:53:19.180Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://ozpcak42w.bkt.clouddn.com/Category-0.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://ozpcak42w.bkt.clouddn.com/Category-2.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://ozpcak42w.bkt.clouddn.com/Category-4.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://ozpcak42w.bkt.clouddn.com/Category-6.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://ozpcak42w.bkt.clouddn.com/Category-7.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure>]]></content>
     
@@ -108,10 +108,10 @@
     
       <category term="Mathematical Physics" scheme="http://yoursite.com/categories/Mathematical-Physics/"/>
     
-      <category term="理论格物论" scheme="http://yoursite.com/categories/Mathematical-Physics/%E7%90%86%E8%AE%BA%E6%A0%BC%E7%89%A9%E8%AE%BA/"/>
+      <category term="Category Theory" scheme="http://yoursite.com/categories/Mathematical-Physics/Category-Theory/"/>
     
+      <category term="理论格物论" scheme="http://yoursite.com/categories/Mathematical-Physics/Category-Theory/%E7%90%86%E8%AE%BA%E6%A0%BC%E7%89%A9%E8%AE%BA/"/>
     
-      <category term="Category Theory" scheme="http://yoursite.com/tags/Category-Theory/"/>
     
       <category term="Preface" scheme="http://yoursite.com/tags/Preface/"/>
     
