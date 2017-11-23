@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Mathjax on my Hexo | 逸世凌虚的试剑亭 | 云行雨施，品物流形</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Mathjax,LaTeX,Javascript">
+    <meta name="description" content="Thic page record the configuration of my hexo theme indigo.">
+<meta name="keywords" content="Mathjax,LaTeX,Javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mathjax on my Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/index.html">
+<meta property="og:site_name" content="逸世凌虚的试剑亭">
+<meta property="og:description" content="Thic page record the configuration of my hexo theme indigo.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-11-20T15:25:30.048Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mathjax on my Hexo">
+<meta name="twitter:description" content="Thic page record the configuration of my hexo theme indigo.">
+    
+        <link rel="alternate" type="application/atom+xml" title="逸世凌虚的试剑亭" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Xiaodong Hu</h5>
+          <a href="mailto:cdqz2014@mail.ustc.edu.cn" title="cdqz2014@mail.ustc.edu.cn" class="mail">cdqz2014@mail.ustc.edu.cn</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/cdqz2014" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.zhihu.com/people/gai-nie-39/answers" target="_blank" >
+                <i class="icon icon-lg icon-link"></i>
+                zhihu
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Mathjax on my Hexo</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Mathjax on my Hexo</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2016-06-23T17:49:54.000Z" itemprop="datePublished" class="page-time">
+  2016-06-24
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Mathjax/">Mathjax</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Configuration-Files"><span class="post-toc-number">1.</span> <span class="post-toc-text">Configuration Files</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Require-Necessary-Packages-and-Define-Macros-for-Convenience-and-Compatibility"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Require Necessary Packages and Define Macros for Convenience and Compatibility</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Add-Numbers-for-Equations"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Add Numbers for Equations</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Accelate-Analysis"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Accelate Analysis:</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Mathjax-Tests"><span class="post-toc-number">2.</span> <span class="post-toc-text">Mathjax Tests</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#AMS-Font-Test"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">AMS Font Test</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Matrix-Test"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Matrix Test</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Commutative-Diagrams-Test"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">Commutative Diagrams Test</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Mathjax-on-my-Hexo"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Mathjax on my Hexo</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2016-06-24 01:49:54" datetime="2016-06-23T17:49:54.000Z"  itemprop="datePublished">2016-06-24</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Mathjax/">Mathjax</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <hr>
+<p>Thic page record the configuration of my hexo theme <strong>indigo</strong>.</p>
+<a id="more"></a>
+<h1 id="Configuration-Files"><a href="#Configuration-Files" class="headerlink" title="Configuration Files"></a>Configuration Files</h1><h2 id="Require-Necessary-Packages-and-Define-Macros-for-Convenience-and-Compatibility"><a href="#Require-Necessary-Packages-and-Define-Macros-for-Convenience-and-Compatibility" class="headerlink" title="Require Necessary Packages and Define Macros for Convenience and Compatibility"></a>Require Necessary Packages and Define Macros for Convenience and Compatibility</h2><pre><code>&lt;% if (theme.mathjax){ %&gt;
+&lt;!-- mathjax config similar to math.stackexchange --&gt;
+
+&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ [&apos;$&apos;,&apos;$&apos;], [&quot;\\(&quot;,&quot;\\)&quot;]  ],
+    displayMath: [ [&apos;$$&apos;, &apos;$$&apos;] ],
+        processEscapes: true,
+        skipTags: [&apos;script&apos;, &apos;noscript&apos;, &apos;style&apos;, &apos;textarea&apos;, &apos;pre&apos;, &apos;code&apos;]
+    },
+    TeX: {
+    equationNumbers: { autoNumber: &quot;AMS&quot; },
+    extensions: [&quot;AMSmath.js&quot;, &quot;AMSsymbols.js&quot;, &quot;AMScd.js&quot;, &quot;mediawiki-texvc.js&quot;],
+    Macros: {
+        bm: &quot;\\boldsymbol&quot;,
+        dd: &quot;\\mathop{}\\!\\mathrm{d}&quot;,
+    }
+    }
+});
+</code></pre><h2 id="Add-Numbers-for-Equations"><a href="#Add-Numbers-for-Equations" class="headerlink" title="Add Numbers for Equations"></a>Add Numbers for Equations</h2><pre><code>MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i &lt; all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += &apos; has-jax&apos;;
+    }
+});
+&lt;/script&gt;
+</code></pre><h2 id="Accelate-Analysis"><a href="#Accelate-Analysis" class="headerlink" title="Accelate Analysis:"></a>Accelate Analysis:</h2><pre><code>&lt;script async src=&quot;//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML&quot; async&gt;&lt;/script&gt;
+&lt;% } %&gt;
+</code></pre><h1 id="Mathjax-Tests"><a href="#Mathjax-Tests" class="headerlink" title="Mathjax Tests"></a>Mathjax Tests</h1><h2 id="AMS-Font-Test"><a href="#AMS-Font-Test" class="headerlink" title="AMS Font Test"></a>AMS Font Test</h2><pre><code>$$\mathcal{ABC}\mathbf{ABC}\mathfrak{ABC}\mathscr{ABC}\mathsf{abc}.$$
+</code></pre><p>$$\mathcal{ABC}\mathbf{ABC}\mathfrak{ABC}\mathscr{ABC}\mathsf{abc}.$$</p>
+<h2 id="Matrix-Test"><a href="#Matrix-Test" class="headerlink" title="Matrix Test"></a>Matrix Test</h2><pre><code>$$
+\chi(\lambda) = \left| \begin{array}{ccc}
+\lambda - a &amp; -b &amp; -c \\
+-d &amp; \lambda - e &amp; -f \\
+-g &amp; -h &amp; \lambda - i
+\end{array} \right|.
+$$
+</code></pre><p>$$<br>\chi(\lambda) = \left| \begin{array}{ccc}<br>\lambda - a &amp; -b &amp; -c \\<br>-d &amp; \lambda - e &amp; -f \\<br>-g &amp; -h &amp; \lambda - i<br>\end{array} \right|.<br>$$</p>
+<h2 id="Commutative-Diagrams-Test"><a href="#Commutative-Diagrams-Test" class="headerlink" title="Commutative Diagrams Test"></a>Commutative Diagrams Test</h2><pre><code>$$\begin{CD}
+A @&lt;&lt;&lt; B @&gt;&gt;&gt; C \\
+  @.     @|   @AAA \\
+  @.   D @=   E.
+\end{CD}$$
+</code></pre><p>$$\begin{CD}<br>A @&lt;&lt;&lt; B @&gt;&gt;&gt; C \\<br>  @.     @|   @AAA \\<br>  @.   D @=   E.<br>\end{CD}$$</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2017-11-20T15:25:30.048Z" itemprop="dateUpdated">2017-11-20 23:25:30</time>
+</span><br>
+
+
+        
+        The copyright belongs to the author Xiaodong Hu. Any questions, ask me on <a href="https://www.zhihu.com/people/gai-nie-39/answers">zhihu</a> or send <a href="mailto:cdqz2014@mail.ustc.edu.cn">email</a> to me
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="Xiaodong Hu">
+            Xiaodong Hu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/">Javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTeX/">LaTeX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mathjax/">Mathjax</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/&title=《Mathjax on my Hexo》 — 逸世凌虚的试剑亭&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/&title=《Mathjax on my Hexo》 — 逸世凌虚的试剑亭&source=
+Thic page record the configuration of my hexo theme indigo." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Mathjax on my Hexo》 — 逸世凌虚的试剑亭&url=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/03/20/Mathematical-Physics-Category-Theory/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Mathematical Physics: Category Theory</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2016/04/08/Einstein Equation-Variation/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Derivation of Einstein&#39;s Fields Equation</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'cdqz2014',
+            repo: 'cdqz2014.github.io',
+            oauth: {
+                client_id: '9feb99ec3ea4a29a12da',
+                client_secret: '33ddcb80b221846de3e9e1f39f9b7736fb245834',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢支持~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Xiaodong Hu &copy; 2015 - 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/&title=《Mathjax on my Hexo》 — 逸世凌虚的试剑亭&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/&title=《Mathjax on my Hexo》 — 逸世凌虚的试剑亭&source=
+Thic page record the configuration of my hexo theme indigo." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Mathjax on my Hexo》 — 逸世凌虚的试剑亭&url=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2016/06/24/Mathjax-on-my-Hexo/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJElEQVR42u3aQW7DMAwEwP7/0+61QBBnV1IDWBqfisCOOTmwFMmfn/i6Xq7Xz9/d//eT9qnFFwYGxmMZ1+11H9b9i/P7k/d+eCMGBsYBjCSI/Kmcd/+u/BswMDAw2r9bWP7zYWBgYLQJd6agbJMvBgYGRhJQcuCcSaBfOotjYGA8kJF33b//97/MNzAwMB7FuMqrHRLMfxJFhYGBsTUjT3Bt4bi4lXYbDwYGxgmMpFBLmmJjKTtv6i2oYTEwMB7IaNtY+WrXzIChXvjAwMA4hjEWdDKYbFfE8lSLgYFxAmPs4bE2Wf7sgiUzDAyMjRht0TY2I51J3FEDDgMD4wBGEujM8CAJa+p4jIGBsTWjLfjGCru2kZePQjEwME5gjBVt86PHsaWNDwthGBgYWzPaJlobaLLM0ZaAGBgYpzFmvug7g8x62QIDA2MjRvJYHtyqtl1+PwYGxgmMsfZ9jpxZrSiGARgYGFszkiJssDgrj8T5/dFkAwMDYzvG2vJupgE3toSBgYFxDiMfNI6l13yZLPlp3iZcDAyMrRkzabRtqOU/TVL7YWBg7M24yqs9+rYLGWMDCQwMjL0ZM8kuT75tw25Vsw8DA2MnRpJk20bYKvx9DPVgAAMD4+GMmbJvpt3f/geIZrAYGBgYEy225NvyQhMDAwOjfVmSiMdaZlETEAMD4wBGG0QeXLty0bb/MDAwTmC0R8f7QMeCzpP72NEXAwPjsYxfODqTYY2yKhIAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+	displayMath: [ ['$$', '$$'] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+	equationNumbers: { autoNumber: "AMS" },
+	extensions: ["AMSmath.js", "AMSsymbols.js", "AMScd.js", "mediawiki-texvc.js"],
+	Macros: {
+	    bm: "\\boldsymbol",
+	    dd: "\\mathop{}\\!\\mathrm{d}",
+	}
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '∑(っ °Д °;)っ';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(｡・`ω´･)';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
