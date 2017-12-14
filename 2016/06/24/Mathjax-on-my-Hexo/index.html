@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="逸世凌虚的试剑亭">
 <meta property="og:description" content="Thic page record the configuration of my hexo theme indigo.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-11-20T15:25:30.048Z">
+<meta property="og:updated_time" content="2017-11-23T18:10:23.085Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mathjax on my Hexo">
 <meta name="twitter:description" content="Thic page record the configuration of my hexo theme indigo.">
@@ -194,51 +194,15 @@
             <hr>
 <p>Thic page record the configuration of my hexo theme <strong>indigo</strong>.</p>
 <a id="more"></a>
-<h1 id="Configuration-Files"><a href="#Configuration-Files" class="headerlink" title="Configuration Files"></a>Configuration Files</h1><h2 id="Require-Necessary-Packages-and-Define-Macros-for-Convenience-and-Compatibility"><a href="#Require-Necessary-Packages-and-Define-Macros-for-Convenience-and-Compatibility" class="headerlink" title="Require Necessary Packages and Define Macros for Convenience and Compatibility"></a>Require Necessary Packages and Define Macros for Convenience and Compatibility</h2><pre><code>&lt;% if (theme.mathjax){ %&gt;
-&lt;!-- mathjax config similar to math.stackexchange --&gt;
-
-&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ [&apos;$&apos;,&apos;$&apos;], [&quot;\\(&quot;,&quot;\\)&quot;]  ],
-    displayMath: [ [&apos;$$&apos;, &apos;$$&apos;] ],
-        processEscapes: true,
-        skipTags: [&apos;script&apos;, &apos;noscript&apos;, &apos;style&apos;, &apos;textarea&apos;, &apos;pre&apos;, &apos;code&apos;]
-    },
-    TeX: {
-    equationNumbers: { autoNumber: &quot;AMS&quot; },
-    extensions: [&quot;AMSmath.js&quot;, &quot;AMSsymbols.js&quot;, &quot;AMScd.js&quot;, &quot;mediawiki-texvc.js&quot;],
-    Macros: {
-        bm: &quot;\\boldsymbol&quot;,
-        dd: &quot;\\mathop{}\\!\\mathrm{d}&quot;,
-    }
-    }
-});
-</code></pre><h2 id="Add-Numbers-for-Equations"><a href="#Add-Numbers-for-Equations" class="headerlink" title="Add Numbers for Equations"></a>Add Numbers for Equations</h2><pre><code>MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i &lt; all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += &apos; has-jax&apos;;
-    }
-});
-&lt;/script&gt;
-</code></pre><h2 id="Accelate-Analysis"><a href="#Accelate-Analysis" class="headerlink" title="Accelate Analysis:"></a>Accelate Analysis:</h2><pre><code>&lt;script async src=&quot;//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML&quot; async&gt;&lt;/script&gt;
-&lt;% } %&gt;
-</code></pre><h1 id="Mathjax-Tests"><a href="#Mathjax-Tests" class="headerlink" title="Mathjax Tests"></a>Mathjax Tests</h1><h2 id="AMS-Font-Test"><a href="#AMS-Font-Test" class="headerlink" title="AMS Font Test"></a>AMS Font Test</h2><pre><code>$$\mathcal{ABC}\mathbf{ABC}\mathfrak{ABC}\mathscr{ABC}\mathsf{abc}.$$
-</code></pre><p>$$\mathcal{ABC}\mathbf{ABC}\mathfrak{ABC}\mathscr{ABC}\mathsf{abc}.$$</p>
-<h2 id="Matrix-Test"><a href="#Matrix-Test" class="headerlink" title="Matrix Test"></a>Matrix Test</h2><pre><code>$$
-\chi(\lambda) = \left| \begin{array}{ccc}
-\lambda - a &amp; -b &amp; -c \\
--d &amp; \lambda - e &amp; -f \\
--g &amp; -h &amp; \lambda - i
-\end{array} \right|.
-$$
-</code></pre><p>$$<br>\chi(\lambda) = \left| \begin{array}{ccc}<br>\lambda - a &amp; -b &amp; -c \\<br>-d &amp; \lambda - e &amp; -f \\<br>-g &amp; -h &amp; \lambda - i<br>\end{array} \right|.<br>$$</p>
-<h2 id="Commutative-Diagrams-Test"><a href="#Commutative-Diagrams-Test" class="headerlink" title="Commutative Diagrams Test"></a>Commutative Diagrams Test</h2><pre><code>$$\begin{CD}
-A @&lt;&lt;&lt; B @&gt;&gt;&gt; C \\
-  @.     @|   @AAA \\
-  @.   D @=   E.
-\end{CD}$$
-</code></pre><p>$$\begin{CD}<br>A @&lt;&lt;&lt; B @&gt;&gt;&gt; C \\<br>  @.     @|   @AAA \\<br>  @.   D @=   E.<br>\end{CD}$$</p>
+<h1 id="Configuration-Files"><a href="#Configuration-Files" class="headerlink" title="Configuration Files"></a>Configuration Files</h1><h2 id="Require-Necessary-Packages-and-Define-Macros-for-Convenience-and-Compatibility"><a href="#Require-Necessary-Packages-and-Define-Macros-for-Convenience-and-Compatibility" class="headerlink" title="Require Necessary Packages and Define Macros for Convenience and Compatibility"></a>Require Necessary Packages and Define Macros for Convenience and Compatibility</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (theme.mathjax)&#123; %&gt;</span><br><span class="line">&lt;!-- mathjax config similar to math.stackexchange --&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=<span class="string">"text/x-mathjax-config"</span>&gt;</span><br><span class="line">MathJax.Hub.Config(&#123;</span><br><span class="line">    tex2jax: &#123;</span><br><span class="line">        inlineMath: [ [<span class="string">'$'</span>,<span class="string">'$'</span>], [<span class="string">"\\("</span>,<span class="string">"\\)"</span>]  ],</span><br><span class="line">    displayMath: [ [<span class="string">'$$'</span>, <span class="string">'$$'</span>] ],</span><br><span class="line">        processEscapes: <span class="literal">true</span>,</span><br><span class="line">        skipTags: [<span class="string">'script'</span>, <span class="string">'noscript'</span>, <span class="string">'style'</span>, <span class="string">'textarea'</span>, <span class="string">'pre'</span>, <span class="string">'code'</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">    TeX: &#123;</span><br><span class="line">    equationNumbers: &#123; <span class="attr">autoNumber</span>: <span class="string">"AMS"</span> &#125;,</span><br><span class="line">    extensions: [<span class="string">"AMSmath.js"</span>, <span class="string">"AMSsymbols.js"</span>, <span class="string">"AMScd.js"</span>, <span class="string">"mediawiki-texvc.js"</span>],</span><br><span class="line">    Macros: &#123;</span><br><span class="line">        bm: <span class="string">"\\boldsymbol"</span>,</span><br><span class="line">        dd: <span class="string">"\\mathop&#123;&#125;\\!\\mathrm&#123;d&#125;"</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="Add-Numbers-for-Equations"><a href="#Add-Numbers-for-Equations" class="headerlink" title="Add Numbers for Equations"></a>Add Numbers for Equations</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">MathJax.Hub.Queue(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> all = MathJax.Hub.getAllJax(), i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i &lt; all.length; i += <span class="number">1</span>) &#123;</span><br><span class="line">        all[i].SourceElement().parentNode.className += <span class="string">' has-jax'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Accelate-Analysis"><a href="#Accelate-Analysis" class="headerlink" title="Accelate Analysis:"></a>Accelate Analysis:</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"</span> <span class="keyword">async</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="Mathjax-Tests"><a href="#Mathjax-Tests" class="headerlink" title="Mathjax Tests"></a>Mathjax Tests</h1><h2 id="AMS-Font-Test"><a href="#AMS-Font-Test" class="headerlink" title="AMS Font Test"></a>AMS Font Test</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\mathcal&#123;ABC&#125;\mathbf&#123;ABC&#125;\mathfrak&#123;ABC&#125;\mathscr&#123;ABC&#125;\mathsf&#123;abc&#125;.$$</span><br></pre></td></tr></table></figure>
+<p>$$\mathcal{ABC}\mathbf{ABC}\mathfrak{ABC}\mathscr{ABC}\mathsf{abc}.$$</p>
+<h2 id="Matrix-Test"><a href="#Matrix-Test" class="headerlink" title="Matrix Test"></a>Matrix Test</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\chi(\lambda) = \left| \begin&#123;array&#125;&#123;ccc&#125;</span><br><span class="line">\lambda - a &amp; -b &amp; -c \\</span><br><span class="line">-d &amp; \lambda - e &amp; -f \\</span><br><span class="line">-g &amp; -h &amp; \lambda - i</span><br><span class="line">\end&#123;array&#125; \right|.</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<p>$$<br>\chi(\lambda) = \left| \begin{array}{ccc}<br>\lambda - a &amp; -b &amp; -c \\<br>-d &amp; \lambda - e &amp; -f \\<br>-g &amp; -h &amp; \lambda - i<br>\end{array} \right|.<br>$$</p>
+<h2 id="Commutative-Diagrams-Test"><a href="#Commutative-Diagrams-Test" class="headerlink" title="Commutative Diagrams Test"></a>Commutative Diagrams Test</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;CD&#125;</span><br><span class="line">A @&lt;&lt;&lt; B @&gt;&gt;&gt; C \\</span><br><span class="line">  @.     @|   @AAA \\</span><br><span class="line">  @.   D @=   E.</span><br><span class="line">\end&#123;CD&#125;$$</span><br></pre></td></tr></table></figure>
+<p>$$\begin{CD}<br>A @&lt;&lt;&lt; B @&gt;&gt;&gt; C \\<br>  @.     @|   @AAA \\<br>  @.   D @=   E.<br>\end{CD}$$</p>
 
         </div>
 
@@ -246,7 +210,7 @@ A @&lt;&lt;&lt; B @&gt;&gt;&gt; C \\
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-11-20T15:25:30.048Z" itemprop="dateUpdated">2017-11-20 23:25:30</time>
+    Last updated: <time datetime="2017-11-23T18:10:23.085Z" itemprop="dateUpdated">2017-11-24 02:10:23</time>
 </span><br>
 
 
