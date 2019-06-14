@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-13T21:17:33.130Z</updated>
+  <updated>2019-06-14T05:12:55.197Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>表达欲这种东西，输入多了自然就回来了</title>
+    <link href="http://yoursite.com/2019/06/14/back/"/>
+    <id>http://yoursite.com/2019/06/14/back/</id>
+    <published>2019-06-14T05:08:00.000Z</published>
+    <updated>2019-06-14T05:12:55.197Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h3 id="Syntax-Test"><a href="#Syntax-Test" class="headerlink" title="Syntax Test"></a>Syntax Test</h3><h4 id="Footnote"><a href="#Footnote" class="headerlink" title="Footnote"></a>Footnote</h4><p>I love you<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">test</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Printer Setup on Archlinux (CUPS)</title>
@@ -92,10 +113,6 @@
       <category term="Category Theory" scheme="http://yoursite.com/categories/Mathematical-Physics/%E7%90%86%E8%AE%BA%E6%A0%BC%E7%89%A9%E8%AE%BA/Category-Theory/"/>
     
     
-      <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
-    
-      <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
-    
       <category term="Linear Space Category" scheme="http://yoursite.com/tags/Linear-Space-Category/"/>
     
       <category term="Free Space" scheme="http://yoursite.com/tags/Free-Space/"/>
@@ -103,6 +120,10 @@
       <category term="Direct Sum" scheme="http://yoursite.com/tags/Direct-Sum/"/>
     
       <category term="Tensor Product" scheme="http://yoursite.com/tags/Tensor-Product/"/>
+    
+      <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
+    
+      <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
     
   </entry>
   
@@ -128,13 +149,13 @@
       <category term="Category Theory" scheme="http://yoursite.com/categories/Mathematical-Physics/%E7%90%86%E8%AE%BA%E6%A0%BC%E7%89%A9%E8%AE%BA/Category-Theory/"/>
     
     
-      <category term="Group Category" scheme="http://yoursite.com/tags/Group-Category/"/>
-    
-      <category term="Free Group" scheme="http://yoursite.com/tags/Free-Group/"/>
-    
       <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
     
       <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
+    
+      <category term="Group Category" scheme="http://yoursite.com/tags/Group-Category/"/>
+    
+      <category term="Free Group" scheme="http://yoursite.com/tags/Free-Group/"/>
     
   </entry>
   
