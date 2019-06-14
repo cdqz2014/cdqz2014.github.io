@@ -120,6 +120,10 @@
       <category term="Category Theory" scheme="http://yoursite.com/categories/Mathematical-Physics/%E7%90%86%E8%AE%BA%E6%A0%BC%E7%89%A9%E8%AE%BA/Category-Theory/"/>
     
     
+      <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
+    
+      <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
+    
       <category term="Linear Space Category" scheme="http://yoursite.com/tags/Linear-Space-Category/"/>
     
       <category term="Free Space" scheme="http://yoursite.com/tags/Free-Space/"/>
@@ -127,10 +131,6 @@
       <category term="Direct Sum" scheme="http://yoursite.com/tags/Direct-Sum/"/>
     
       <category term="Tensor Product" scheme="http://yoursite.com/tags/Tensor-Product/"/>
-    
-      <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
-    
-      <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
     
   </entry>
   
@@ -156,13 +156,13 @@
       <category term="Category Theory" scheme="http://yoursite.com/categories/Mathematical-Physics/%E7%90%86%E8%AE%BA%E6%A0%BC%E7%89%A9%E8%AE%BA/Category-Theory/"/>
     
     
-      <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
-    
-      <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
-    
       <category term="Group Category" scheme="http://yoursite.com/tags/Group-Category/"/>
     
       <category term="Free Group" scheme="http://yoursite.com/tags/Free-Group/"/>
+    
+      <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
+    
+      <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
     
   </entry>
   
