@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-14T05:12:55.197Z</updated>
+  <updated>2019-06-14T05:57:49.424Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,19 +21,26 @@
     <link href="http://yoursite.com/2019/06/14/back/"/>
     <id>http://yoursite.com/2019/06/14/back/</id>
     <published>2019-06-14T05:08:00.000Z</published>
-    <updated>2019-06-14T05:12:55.197Z</updated>
+    <updated>2019-06-14T05:57:49.424Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h3 id="Syntax-Test"><a href="#Syntax-Test" class="headerlink" title="Syntax Test"></a>Syntax Test</h3><h4 id="Footnote"><a href="#Footnote" class="headerlink" title="Footnote"></a>Footnote</h4><p>I love you<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">test</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<p>历经将近一年的沉寂，我还是决定写些无人问津的东西，作为 PhD 期间的感悟与记录了。</p><p>其实我有纠结过像花姐一样，将内心激进的学术与政治观点宣之于众，然而或许自己锋芒不足，无论是知乎文章还是豆瓣日记，权衡一番觉得还是不太适合 post 这些过于私人的观点和评论。这全然无关政治，只是我不想因为评论区智障的表演而洗眼，也懒得与 AI 猜谜、与管理员斗气。Anyway，在这个没有审查的角落里，我尚且有畅所欲言的锋芒与勇气。</p><p><strong>表达欲的下降，追本溯源，是因为输入的贫乏*</strong>。而这篇 prelude 的突兀出现，也并非我一时兴起，实在是周三的第一次 Seminar 学了太多干货，跟着师兄读了 Lieb-Robinson Bounds 的原始文章，另外复现了 1D Lie-Schultz-Mattis theorem 的证明，寻一处宣泄两天过去都难以平复的表达欲罢了。换句话说，有文想写，有话想说，说明最近的输入与成长是令人满意的。但愿以后的日子，能日进斗才，而文思泉涌不涸。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;历经将近一年的沉寂，我还是决定写些无人问津的东西，作为 PhD 期间的感悟与记录了。&lt;/p&gt;
+&lt;p&gt;其实我有纠结过像花姐一样，将内心激进的学术与政治观点宣之于众，然而或许自己锋芒不足，无论是知乎文章还是豆瓣日记，权衡一番觉得还是不太适合 post 这些过于私人的观点和评论。
       
     
     </summary>
     
+      <category term="Research" scheme="http://yoursite.com/categories/Research/"/>
+    
+      <category term="Life" scheme="http://yoursite.com/categories/Research/Life/"/>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -113,10 +120,6 @@
       <category term="Category Theory" scheme="http://yoursite.com/categories/Mathematical-Physics/%E7%90%86%E8%AE%BA%E6%A0%BC%E7%89%A9%E8%AE%BA/Category-Theory/"/>
     
     
-      <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
-    
-      <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
-    
       <category term="Linear Space Category" scheme="http://yoursite.com/tags/Linear-Space-Category/"/>
     
       <category term="Free Space" scheme="http://yoursite.com/tags/Free-Space/"/>
@@ -124,6 +127,10 @@
       <category term="Direct Sum" scheme="http://yoursite.com/tags/Direct-Sum/"/>
     
       <category term="Tensor Product" scheme="http://yoursite.com/tags/Tensor-Product/"/>
+    
+      <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
+    
+      <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
     
   </entry>
   
@@ -149,13 +156,13 @@
       <category term="Category Theory" scheme="http://yoursite.com/categories/Mathematical-Physics/%E7%90%86%E8%AE%BA%E6%A0%BC%E7%89%A9%E8%AE%BA/Category-Theory/"/>
     
     
-      <category term="Group Category" scheme="http://yoursite.com/tags/Group-Category/"/>
-    
-      <category term="Free Group" scheme="http://yoursite.com/tags/Free-Group/"/>
-    
       <category term="Free Functors" scheme="http://yoursite.com/tags/Free-Functors/"/>
     
       <category term="Underlying Functors" scheme="http://yoursite.com/tags/Underlying-Functors/"/>
+    
+      <category term="Group Category" scheme="http://yoursite.com/tags/Group-Category/"/>
+    
+      <category term="Free Group" scheme="http://yoursite.com/tags/Free-Group/"/>
     
   </entry>
   
